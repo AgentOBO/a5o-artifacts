@@ -1,0 +1,27 @@
+'O_unique' depends on axioms: [C_functional]
+'N1_necessity' does not depend on any axioms
+'N2_necessity' does not depend on any axioms
+'N3_necessity' does not depend on any axioms
+'N4_necessity' does not depend on any axioms
+'N5_necessity' does not depend on any axioms
+'N6_necessity' does not depend on any axioms
+'P1' does not depend on any axioms
+'P3' does not depend on any axioms
+'P4' does not depend on any axioms
+'P5' does not depend on any axioms
+'U3_reduction' does not depend on any axioms
+'canonical_monitor_achieves_ADA' does not depend on any axioms
+'canonical_monitor_is_complete' does not depend on any axioms
+'overcautious_monitor_achieves_ADA' does not depend on any axioms
+'completeness_is_not_universal' does not depend on any axioms
+'ABLP.D1_no_revocation_dominance_primitive' does not depend on any axioms
+'ABLP.D2_not_act_specific' does not depend on any axioms
+'ABLP.D3_compound_principals_violate_single_governor' depends on axioms: [ABLP.conj_speaks_for_left,
+ ABLP.conj_speaks_for_right]
+'SPKI.spki_certs_can_vary_over_time' does not depend on any axioms
+'SPKI.spki_certs_can_vary_over_action' does not depend on any axioms
+'SPKI.SPKI_threshold_violates_single_governor' depends on axioms: [SPKI.spki_threshold_empowers_left,
+ SPKI.spki_threshold_empowers_right]
+'Macaroons.bearer_tokens_admit_multiple_governors' depends on axioms: [Macaroons.copy_preserves_authorization]
+'Biscuit.biscuit_chain_integrity_matches_C_functional' depends on axioms: [Biscuit.biscuit_signature_functional]
+'UCAN.ucan_matches_P2_shape' depends on axioms: [UCAN.ucan_revocation_dominance]

@@ -1,0 +1,9 @@
+{
+  "headers": [
+    { "source": "/a5o/(.*)\\.lean", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] },
+    { "source": "/a5o/(.*)\\.ots",  "headers": [{ "key": "Content-Type", "value": "application/octet-stream" }] },
+    { "source": "/a5o/(.*)",        "headers": [{ "key": "Cache-Control", "value": "public, max-age=300" }] }
+  ],
+  "cleanUrls": false,
+  "trailingSlash": false
+}
