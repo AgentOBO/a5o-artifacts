@@ -79,5 +79,11 @@ a block height once it does.
 Every hash on this page was verified with `sha256sum -c` against
 `SHA256SUMS` before this bundle was committed.
 
+A signed correction to Executive Provenance Record AOB-PROV-2026-08-31-0001
+§5.3, addressing the same v2/v3 distinction documented above, is at
+[`CORRECTION-2026-09-06-provenance-5.3.md`](CORRECTION-2026-09-06-provenance-5.3.md),
+with its OpenTimestamps proof at
+[`CORRECTION-2026-09-06-provenance-5.3.md.ots`](CORRECTION-2026-09-06-provenance-5.3.md.ots).
+
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
