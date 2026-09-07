@@ -142,5 +142,31 @@ A signed correction to Executive Provenance Record AOB-PROV-2026-08-31-0001
 with its OpenTimestamps proof at
 [`CORRECTION-2026-09-06-provenance-5.3.md.ots`](CORRECTION-2026-09-06-provenance-5.3.md.ots).
 
+## Signed correction — all nine axioms were individually inconsistent
+
+[`corrections/2026-09-07/`](corrections/2026-09-07/) carries the executed
+instrument that authorizes v4: the paper's §Axioms, §Uniqueness, and each
+of the five prior-art sections described nine axioms as reasonable,
+narrow, independently-justified assumptions. Each was in fact individually
+inconsistent — Lean generalized it over every predicate of its declared
+type rather than the one predicate this development reasons about, so
+each derives `False` when instantiated at a pathological predicate of the
+right type. This correction states the finding plainly (a correction, not
+a softening) and proposes the exact section-by-section replacement text,
+citing v4 (`0e5ebe3f…`) as the repair.
+
+- `corrections/2026-09-07/CORRECTION-2026-09-07-axioms-inconsistent.md`
+  — SHA-256 `d550aeab2d87e978232db8d6ee704e408cfc5646b3b379ea08a86a9dd40649b9`
+  (the source text, unsigned)
+- `corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Signed.pdf`
+  — SHA-256 `dc15cb164d8f2d41516de6b4661db8535736847a8facfd02b2dd0d126d756d6e`
+  (the executed instrument)
+- `corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Evidence Summary.pdf`
+  — SHA-256 `dcbeb5797a68a633c9ab104c1209aec22dd78a561b398098cea80b5303835b3d`
+
+Signed 2026-09-07T08:33:39Z, envelope `fa7e9727-b043-4764-a679-58df8d24147e`,
+signer `founder@agentobo.ai`. The sealed paper `.tex`/`.pdf` is unrevised;
+this correction is issued separately, per this project's standing practice.
+
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
