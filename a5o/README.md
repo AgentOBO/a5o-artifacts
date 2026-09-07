@@ -80,22 +80,27 @@ derives `False` from that axiom alone, with no other axiom or `sorry`
 involved: all nine were individually inconsistent as stated, which makes
 every theorem that depended on one of them vacuously true regardless of its
 proof — a defect in how the axioms were stated, not in the reasoning that
-used them. The nineteen theorems that never depended on any axiom (the
-necessity theorems, the completeness-direction theorems, and the pure
-type-level D1/D2-and-dual facts) were never affected.
+used them.
 
-v4 converts each axiom into an explicit hypothesis parameter on the
-theorem(s) that consume it (`O_unique`; `revoked_defeats_O` and
+The sealed development (v3, and v2 before it) states 31 theorems: 8
+depended on one of the nine axioms (`O_unique`; `revoked_defeats_O` and
 `revocation_blocks_enforcement`; `ABLP.D3_...`; `SPKI.SPKI_threshold_...`;
 `Macaroons.bearer_tokens_...`; `Biscuit.biscuit_chain_...`;
-`UCAN.ucan_matches_P2_shape`), applied to the one abstract predicate already
-in scope rather than universally quantified over every predicate of that
-type. Two theorems document the boundary this creates on `O_unique`:
-`quorum_two_governors` exhibits two distinct principals both satisfying `O`
-on a board-quorum instance of the sealed predicate, and
-`quorum_not_CFunctional` proves that instance fails exactly the hypothesis
-`O_unique` now requires. Nothing else changes: the `O` predicate and every
-other pre-existing definition are byte-identical to v3.
+`UCAN.ucan_matches_P2_shape`); the other 23 never depended on any axiom
+(the necessity theorems, the completeness-direction theorems, and the pure
+type-level D1/D2-and-dual facts) and were never affected.
+
+v4 restates the 8 with explicit hypothesis parameters, applied to the one
+abstract predicate already in scope rather than universally quantified
+over every predicate of that type, and leaves the 23 unchanged. It also
+adds two theorems that exist nowhere in the sealed development —
+`quorum_two_governors` and `quorum_not_CFunctional` — documenting the
+boundary `CFunctional` now names on `O_unique`: the first exhibits two
+distinct principals both satisfying `O` on a board-quorum instance of the
+sealed predicate, and the second proves that instance fails exactly the
+hypothesis `O_unique` now requires. 31 restated/unchanged plus 2 additions
+is v4's 33. Nothing else changes: the `O` predicate and every other
+pre-existing definition are byte-identical to v3.
 
 - `v4/Check.lean`, SHA-256 `4a426b13bfa582fb301e24164f2fbfcdbafd9c9067fa876c9a560280c82ff66a`
   — `#print axioms` on all 33 theorems in the file (every `theorem`
@@ -139,10 +144,21 @@ remains `PendingAttestation`).
 Every hash on this page was verified with `sha256sum -c` against
 `SHA256SUMS` before this bundle was committed.
 
-A signed correction to Executive Provenance Record AOB-PROV-2026-08-31-0001
-§5.3, addressing the same v2/v3 distinction documented above, is at
+## Signed correction — Executive Provenance Record §5.3
+
+(Ref: `AOB-CORR-2026-09-06-0001`.) Addresses the same v2/v3 distinction
+documented above: Executive Provenance Record AOB-PROV-2026-08-31-0001
+§5.3 cited tag `paper-sealed-2026-08-29` as the sealed source; that tag
+resolves to v3, not v2, while the paper's §12 and cover describe v2.
+Dated 2026-09-06, envelope `f94f3dab-3fec-4a18-894b-33373ef268ff`. Hash
+of the signed instrument: `8d446af28d95efe6e6b122e3d6819c7a42f2739b796c91457615e30aba69faf7`
+(not published here — its source text is, matching content, at hash
+`ae9ed913ca7361628b004ba0e191c7c9a3b97c90542bf0bc515e9f893d44b21c`).
+Attested at Bitcoin block 965717 (`bob.btc.calendar.opentimestamps.org`;
+`catallaxy` and `finney` remain `PendingAttestation`).
+
 [`CORRECTION-2026-09-06-provenance-5.3.md`](CORRECTION-2026-09-06-provenance-5.3.md),
-with its OpenTimestamps proof at
+proof at
 [`CORRECTION-2026-09-06-provenance-5.3.md.ots`](CORRECTION-2026-09-06-provenance-5.3.md.ots).
 
 ## Signed correction — all nine axioms were individually inconsistent
