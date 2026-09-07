@@ -1,8 +1,8 @@
-# A⁵O — Lean 4 source, two versions
+# A⁵O — Lean 4 source, three versions
 
 This directory publishes the Lean 4 formalization behind *A Machine-Checked
-Necessity Result for Accountable Delegated Authority* (28 Aug 2026) in two
-distinct, separately verified forms. Neither is "the" verified source on its
+Necessity Result for Accountable Delegated Authority* (28 Aug 2026) in three
+distinct, separately verified forms. None is "the" verified source on its
 own — each is labeled, and the label is load-bearing.
 
 ## v2 — what the paper describes
@@ -66,6 +66,61 @@ lean -o A5O.olean A5O.lean       # expect exit 0, no output
 LEAN_PATH=. lean Check.lean       # expect output identical to axioms.txt
 ```
 
+## v4 — a defect found in v3's axioms, and the repair
+
+`v4/A5O.lean`, SHA-256 `0e5ebe3f5113727ae0cd41ec4399661a352fcc4fb522fcfe7ef7be3318f6b452`.
+
+On 2026-09-07, an external review (`Consistency.lean`) found that each of
+v3's nine axioms is stated over the file's own section variables, which Lean
+generalizes automatically — so each axiom in fact asserted its property for
+*every* predicate of the matching type, not only the one this file reasons
+about. Instantiating each axiom at a deliberately pathological predicate
+(e.g. `C_functional` at the constantly-true signature predicate on `Bool`)
+derives `False` from that axiom alone, with no other axiom or `sorry`
+involved: all nine were individually inconsistent as stated, which makes
+every theorem that depended on one of them vacuously true regardless of its
+proof — a defect in how the axioms were stated, not in the reasoning that
+used them. The nineteen theorems that never depended on any axiom (the
+necessity theorems, the completeness-direction theorems, and the pure
+type-level D1/D2-and-dual facts) were never affected.
+
+v4 converts each axiom into an explicit hypothesis parameter on the
+theorem(s) that consume it (`O_unique`; `revoked_defeats_O` and
+`revocation_blocks_enforcement`; `ABLP.D3_...`; `SPKI.SPKI_threshold_...`;
+`Macaroons.bearer_tokens_...`; `Biscuit.biscuit_chain_...`;
+`UCAN.ucan_matches_P2_shape`), applied to the one abstract predicate already
+in scope rather than universally quantified over every predicate of that
+type. Two theorems document the boundary this creates on `O_unique`:
+`quorum_two_governors` exhibits two distinct principals both satisfying `O`
+on a board-quorum instance of the sealed predicate, and
+`quorum_not_CFunctional` proves that instance fails exactly the hypothesis
+`O_unique` now requires. Nothing else changes: the `O` predicate and every
+other pre-existing definition are byte-identical to v3.
+
+- `v4/Check.lean`, SHA-256 `4a426b13bfa582fb301e24164f2fbfcdbafd9c9067fa876c9a560280c82ff66a`
+  — `#print axioms` on all 33 theorems in the file (every `theorem`
+  declaration, not a pre-selected subset).
+- `v4/axioms.txt`, SHA-256 `1ecf611ce211fbaaf147666feb40c1518b7ed6bc07e8a795f914706b7a830daf`
+  — all 33 report zero axiom dependency.
+
+Re-check with Lean 4.14.0:
+```
+lean -o A5O.olean A5O.lean       # expect exit 0, no output, no warnings
+LEAN_PATH=. lean Check.lean       # expect output identical to axioms.txt
+```
+
+The regression that found the defect, `Consistency.lean` (SHA-256
+`3c2387c6b9730a81a9b5b03ed6f0e800ce9b43fe19411bb914919578149ddebb`), now
+fails to compile against v4 — nine "unknown identifier" errors, because
+there is no longer an axiom to instantiate. It is not included in this
+public bundle; the full record, including the regression file itself and
+the dated finding, is in `AgentOBO/a5o-lean`'s `corrections/` and
+`repairs/2026-09-07/` directories (private repository).
+
+v3 (`2fde9ccb…`) is not revised by this finding — it remains sealed and
+Bitcoin-anchored at tag `paper-sealed-2026-08-29`. v4 supersedes it for the
+reason above; it does not retract or alter it.
+
 ## OpenTimestamps
 
 `v2/A5O.lean.ots` and `v3/A5O.lean.ots` are independent Bitcoin-anchor
@@ -74,7 +129,7 @@ eight-file batch also covering the audit report, provenance record, and 5
 Sep verification record; v3 on 2026-09-05T13:50:41Z as a single-file stamp).
 `ots verify <file>.ots` against the matching `A5O.lean` will show
 `PendingAttestation` until the underlying Bitcoin transaction confirms, then
-a block height once it does.
+a block height once it does. v4 is not yet timestamped.
 
 Every hash on this page was verified with `sha256sum -c` against
 `SHA256SUMS` before this bundle was committed.
