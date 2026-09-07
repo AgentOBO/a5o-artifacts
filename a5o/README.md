@@ -132,6 +132,9 @@ Sep verification record; v3 on 2026-09-05T13:50:41Z as a single-file stamp).
 a block height once it does. `v4/A5O.lean.ots` was stamped separately,
 2026-09-07T08:44:33Z, two days after v3's — the corrected file has its own
 independent existence proof, not one inherited from v3 or the paper.
+Attested at Bitcoin blocks 965908 and 965933 (two of three calendars,
+independently verified against mempool.space; `finney.calendar.eternitywall.com`
+remains `PendingAttestation`).
 
 Every hash on this page was verified with `sha256sum -c` against
 `SHA256SUMS` before this bundle was committed.
@@ -167,6 +170,9 @@ citing v4 (`0e5ebe3f…`) as the repair.
 Signed 2026-09-07T08:33:39Z, envelope `fa7e9727-b043-4764-a679-58df8d24147e`,
 signer `founder@agentobo.ai`. The sealed paper `.tex`/`.pdf` is unrevised;
 this correction is issued separately, per this project's standing practice.
+Its OpenTimestamps proof is attested at Bitcoin blocks 965908 and 965933
+(two of three calendars, independently verified against mempool.space;
+`finney.calendar.eternitywall.com` remains `PendingAttestation`).
 
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
