@@ -129,7 +129,9 @@ eight-file batch also covering the audit report, provenance record, and 5
 Sep verification record; v3 on 2026-09-05T13:50:41Z as a single-file stamp).
 `ots verify <file>.ots` against the matching `A5O.lean` will show
 `PendingAttestation` until the underlying Bitcoin transaction confirms, then
-a block height once it does. v4 is not yet timestamped.
+a block height once it does. `v4/A5O.lean.ots` was stamped separately,
+2026-09-07T08:44:33Z, two days after v3's — the corrected file has its own
+independent existence proof, not one inherited from v3 or the paper.
 
 Every hash on this page was verified with `sha256sum -c` against
 `SHA256SUMS` before this bundle was committed.
