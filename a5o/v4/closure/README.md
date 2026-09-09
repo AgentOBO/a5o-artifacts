@@ -89,8 +89,14 @@ OpenTimestamps, submitted to four calendars (alice, bob at
 opentimestamps.org, eternitywall, catallaxy) — one anchor covering the
 whole closure set, including the signed instruments. `Closure.lean.ots`,
 `Deployment.lean.ots`, and `Operator_Attestation_NoSideChannel-SIGNED-1fdd4a1b.pdf.ots`
-additionally stamp those three files individually. All pending at
-submission; `ots upgrade` fetches the block path once Bitcoin confirms.
+additionally stamp those three files individually.
+
+All four proofs attested at Bitcoin blocks 966195 and 966205 (`bob` and
+`catallaxy`; independently verified against mempool.space — both
+transactions and both blocks' merkle roots cross-checked directly, not
+taken from `ots info` alone). `finney` remains `PendingAttestation` on
+all four; `alice` was unreachable at the last upgrade attempt (TLS
+handshake failure on that calendar server, not a confirmation status).
 
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
