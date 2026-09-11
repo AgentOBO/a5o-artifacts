@@ -132,6 +132,28 @@ Gate. Attests that the server performs no execution except as an
 does not disclose any private key material, key custody arrangement, or
 server internals beyond that single proposition.
 
+## Correction to the Operator Attestation
+
+`Correction_to_Operator_Attestation-SIGNED-28c07836.pdf`, SHA-256
+`25ecc1004482f23a6d2fa6e2e363d56b891284c6d66fcef628d1a935e5302751`.
+Signed under seal, envelope `28c07836-7a7f-4f9c-b844-77b3652fc7b4`, by
+Fitzgerald J. Heslop, 2026-09-12. Responds to the primary-defect finding
+above: withdraws the Operator Attestation's closing "accordingly, the
+proposition `NoSideChannel` ... holds" sentence and clause 6 in full —
+neither followed, since `NoSideChannel` has no satisfying instance
+regardless of server behavior. States plainly that no discharge occurred
+and none is claimed; leaves the server-behavior sentence, Recitals 1, 2,
+4, 7, 8, and the witnessed ALLOW/DENY receipts untouched; does not edit
+or reseal `Deployment.lean`. Discharge for the Gate passes to whichever
+successor model is named file of record, once its own attestations are
+signed.
+
+The envelope's own display name concatenates the document title twice
+(`...envelope 1fdd4a1b-...Operator Attestation — envelope 1fdd4a1b-...`)
+— a paste artifact in the LegalZoom title field, not a defect in the
+document or a second instrument. Noted here so the audit-trail name
+isn't misread as such.
+
 ## Manifest and proof
 
 `MANIFEST.sha256` (SHA-256 `cef84d9d9b2d71189969e3878249c1ac57bec68d6b05cb0423a6e6157d7fcc6d`)
