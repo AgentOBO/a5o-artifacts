@@ -41,7 +41,48 @@ not by the proof.
 
 SHA-256 `b6e79d8f3000d99e52d2e0849a81ed432c7264e7a5e9233f6767db471b00af67`.
 Compiles clean against v4 and `Closure.lean`; all three theorems report
-zero axioms.
+zero axioms. Sealed under signed Operator Attestation, envelope
+`012c0f66-c0df-44aa-ab61-e679bd818a19`, which cites this exact hash;
+unrevised.
+
+**Limitations, found by independent review and confirmed against the
+file (2026-09-11), stated on the same standard applied to every prior
+defect in this project:**
+
+- `I`, `M`, `S`, and `inAoC` are all unconditionally `True`. The theorem
+  proves accountability over a model that does not check identity,
+  mandate, scope, or area-of-consequence — it only checks that a signed
+  ALLOW exists and that the execution occurred inside it.
+- `Appointed` is defined partly as `r.allow = true` — the same field `R`
+  reads. An ALLOW is "appointed" in part because it says so of itself,
+  not because an independent appointment record is checked.
+- `Time := Receipt` means an execution that produced no receipt at all
+  cannot be represented in this model — `Executes` can only be true of
+  something that is already a receipt. `NoSideChannel` therefore
+  excludes nothing the model can state as a distinct alternative; it is
+  not vacuous the way the sealed paper's original axioms were, but it is
+  weaker evidence about the real system than the phrase "theapertures.app
+  is accountable" may initially suggest.
+- The ALLOW/DENY witnesses (`allowReceipt`, `denyReceipt`) are
+  hand-constructed Lean values, not a parse of the real signed JSON —
+  Lean does not independently recompute the receipt hash or verify the
+  Ed25519/ML-DSA signature; that verification was done separately,
+  outside this file, by the session that observed the deployment.
+
+These are defects in how v1 modeled the deployment, not in Lean's
+acceptance of the proof: the theorems are true of the model this file
+defines, and the Operator Attestation attests exactly the proposition it
+names. `Deployment.lean` is sealed and unrevised; these limitations are
+recorded here, not fixed here.
+
+A separate, unattested model, `DeploymentV2.lean` (not part of this
+directory, not sealed, not published), addresses the first three
+limitations above — using an execution type distinct from the receipt,
+an appointment ledger independent of the ALLOW decision, and registry
+lookups for `I`/`M`/`S` in place of `True`. It does not supersede this
+file; it remains a verified-but-unattested model beside the record,
+requiring its own two operator attestations before it could be
+presented as anything more than that.
 
 ## The witnesses
 
