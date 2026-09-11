@@ -86,6 +86,16 @@ defines, and the Operator Attestation attests exactly the proposition it
 names. `Deployment.lean` is sealed and unrevised; these limitations are
 recorded here, not fixed here.
 
+**Dated note (2026-09-12):** the limitations above describe
+`theapertures.app` as it was observed on 2026-09-09 — appointment decided
+from a client-supplied request flag. That decision path was removed on
+2026-09-12, commit `fee8100` (`AgentOBO/apertures-app`): appointment is
+now read from a server-held, hash-chained ledger the caller cannot write,
+and each ALLOW names the ledger occurrence it resolved to. `Deployment.lean`
+remains sealed and unrevised as a record of the earlier gate; a reader
+comparing these limitations against the live server should know which
+gate each witness describes.
+
 A separate, unattested model, `DeploymentV2.lean` (not part of this
 directory, not sealed, not published), addresses the first three
 limitations above — using an execution type distinct from the receipt,
