@@ -98,5 +98,47 @@ taken from `ots info` alone). `finney` remains `PendingAttestation` on
 all four; `alice` was unreachable at the last upgrade attempt (TLS
 handshake failure on that calendar server, not a confirmation status).
 
+## Kernel replay — Lean's own kernel via `leanchecker`, and an independent kernel via `nanoda_lib`
+
+`A5O.lean` v4, `Closure.lean`, and `Deployment.lean` were replayed beyond
+the compiler that produced the committed `.olean` files:
+
+- **`leanchecker --fresh`** (built into the Lean toolchain, run this
+  session): replays every constant into a new environment through Lean's
+  own kernel, independent of the elaborator but the same kernel
+  implementation as the compiler — catches elaborator bugs and
+  environment hacking, not implementation bugs in the kernel itself. All
+  three: exit 0.
+- **`nanoda_lib`** (ammkrn), a from-scratch reimplementation of the Lean 4
+  kernel in Rust — a genuinely independent implementation, not the same
+  kernel: checked the full transitive closure exported by `lean4export`
+  (59,517–59,672 declarations per file, including Lean's core library)
+  against its own implementation of the type theory. All three: 0
+  typechecker errors.
+
+Both replays were run against sources compiled and exported under Lean
+**4.33.0** (`lean4export` requires binary-format compatibility with the
+toolchain that produced the `.olean` files, and no `4.33.1`-compiled
+export tool was available) — not the `4.33.1` binaries the signed record
+cites directly. The source files are byte-identical (same SHA-256 hashes
+listed above) and report zero axioms under both toolchains, so nothing
+is at stake in that difference, but the replay attests the sources as
+recompiled under 4.33.0, not a replay of the original 4.33.1 build.
+
+The `nanoda_lib` config permits four axioms (`propext`, `Classical.choice`,
+`Quot.sound`, `Lean.trustCompiler`) so that Lean's own core library —
+which the exported closure necessarily includes — can load; this is a
+separate statement from "zero axioms" on this project's own theorems.
+`A5O.lean`, `Closure.lean`, and `Deployment.lean`'s declarations use none
+of the four. The run used `unpermitted_axiom_hard_error: false`: an
+unpermitted axiom that is declared but never used is silently skipped;
+one that is declared and used is not silently accepted either — checked
+directly by dropping a single permitted axiom (`Quot.sound`) and
+re-running, which failed immediately (a checker crash, not a graceful
+message) the moment the core library needed it. None of the three real
+runs failed. A separate control (zero permitted axioms,
+`unpermitted_axiom_hard_error: true`) confirmed the stricter mode is
+also live: it correctly caught and hard-errored on `Classical.choice`.
+
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
