@@ -24,7 +24,9 @@ no toolchain heterogeneity in the record.
 
 ## Axiom status
 
-95 of the 96 theorems in `Audit.lean`'s inventory report zero axioms. One,
+95 of the 96 theorems in `Audit.lean`'s inventory report zero axioms — 96
+across all four imported modules (`A5O.lean` 33, `Closure.lean` 16,
+`Deployment.lean` 14, `DeploymentTests.lean` 33; 47 are v5's own). One,
 `Apertures.Tests.phantom_not_listed` (`¬ (phantom ∈ demo.executions)`, a
 demonstration-file fixture, not a core theorem), depends on `propext`. This
 was investigated directly, not merely disclosed: Lean's own `List.mem_cons`
