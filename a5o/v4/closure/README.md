@@ -49,6 +49,17 @@ unrevised.
 file (2026-09-11), stated on the same standard applied to every prior
 defect in this project:**
 
+- **Primary defect — `NoSideChannel` is unsatisfiable, not merely
+  unproven.** It is defined `∀ r : Receipt, r.executed = true → r.allow
+  = true`, quantified over every constructible `Receipt`, not merely
+  ones the server would issue. `⟨_, _, allow := false, executed :=
+  true⟩` is such a value. `¬ NoSideChannel` is therefore a zero-axiom
+  Lean theorem (`LegacyAudit.lean`, `Apertures.original_NoSideChannel_impossible`,
+  checked against this exact file, independently reconfirmed
+  2026-09-11 under Lean 4.19.0, separate from the 4.33.1
+  compiler-of-record). No proof term for the hypothesis can exist, for
+  any deployment — which is exactly why discharge has always rested on
+  the Operator Attestation below rather than a Lean proof.
 - `I`, `M`, `S`, and `inAoC` are all unconditionally `True`. The theorem
   proves accountability over a model that does not check identity,
   mandate, scope, or area-of-consequence — it only checks that a signed
