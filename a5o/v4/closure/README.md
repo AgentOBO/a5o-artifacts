@@ -182,6 +182,15 @@ taken from `ots info` alone). `finney` remains `PendingAttestation` on
 all four; `alice` was unreachable at the last upgrade attempt (TLS
 handshake failure on that calendar server, not a confirmation status).
 
+`README-<prefix>.md.ots` (the hash-prefixed files in this directory, set
+2026-09-11) stamp successive past states of this README, one per
+substantive edit — each commits to the README bytes whose SHA-256 starts
+with that prefix, recoverable from git history at the commit that
+produced them; the un-prefixed `README.md.ots` stamps the current file.
+All three resolve against `git show <that commit>:a5o/v4/closure/README.md`
+followed by `ots verify`, and are confirmed (Bitcoin blocks 966510,
+966545, 966571, 966586) — not orphaned proofs missing their source.
+
 ## Kernel replay — Lean's own kernel via `leanchecker`, and an independent kernel via `nanoda_lib`
 
 `A5O.lean` v4, `Closure.lean`, and `Deployment.lean` were replayed beyond
