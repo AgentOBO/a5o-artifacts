@@ -28,7 +28,6 @@ e3d4abee8c4536c9077b98757e4578612a142d7c822ca2b21a669bb0bb7e0254  a5o/v4/clock/C
 575f0ad97a07dcd8a78e46bafcdb1c4bd78ffa0e458d66cd3eb9e8ed6f3dba80  a5o/v4/clock/ClockStandard.lean-SIGNED-c402256c.pdf.ots
 23230423b9af15876a57cf3c6dd7670acf140d04c1207b8831db9a66449f71ca  a5o/v4/clock/ClockStandard-partI.lean-SIGNED-21127e3c.pdf.ots
 f3fc5e13247ed1ff32c6e79af53a3fb7e9372f21db13d8a0035cee3f32e1a5d3  a5o/v4/clock/clock-commit-hash.txt.ots
-f369f8e85c29c61afe1f0fd72fd8376d9bbe8ec7308996909e3ec25483d48e1f  a5o/v4/clock/proof-record-2026-09-19.md
 8d65c1ad59dd3064b39effda8bed51fd8bfc4859f1c126ecb42e3eea9e82bbb6  a5o/v4/clock/giza/Giza.lean
 9ad53612a37bbbd7d988763a37b1dcdcbd1106d5fb9eadf5e176342a242b7297  a5o/v4/clock/giza/Giza-preframing.lean
 016d6d16061776814f5adf47485fcd685e03f05d9cacff2d7078956c4e85ba88  a5o/v4/clock/giza/Check.lean
@@ -55,3 +54,4 @@ bb5806738f1cfdb079ac36bba62e587307cac1e456e0e24a0f92c30260a1976d  a5o/v4/clock/d
 f354f9899264e40b9850e054ddb3f28c60fa74cb71f1285fa77c1733af4cff54  a5o/v4/clock/datacenter/DataCenter.lean-SIGNED-ac8d691d.pdf.ots
 1b062cc619011e90caf575b42dbc46f45a6f9a9af3db2d1585e5fc8bf0fe4e08  a5o/v4/clock/datacenter/DataCenter-preframing.lean-SIGNED-100dc094.pdf.ots
 bc18e4c4ff802fdccecf5214866a5bff40cc6be899e114908f5b455c0890ef5d  a5o/v4/clock/giza-datacenter-commit-hash.txt.ots
+fce5f1547872ba55e98671f86b3e42f3820cf4cae07f1e8e73a64fabc78fa07f  a5o/v4/clock/proof-record-2026-09-19.md
