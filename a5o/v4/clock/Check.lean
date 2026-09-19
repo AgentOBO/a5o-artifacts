@@ -1,0 +1,25 @@
+import ClockStandard
+#print axioms A5O.Clock.period_matches_frequency
+#print axioms A5O.Clock.ticksPerSecond_eq
+#print axioms A5O.Clock.stated_value_is_truncation
+#print axioms A5O.Clock.stated_value_not_exact
+#print axioms A5O.Clock.fifty_seven_million
+#print axioms A5O.Clock.clock_alone_forces_nothing
+#print axioms A5O.Clock.checksPerCore_one
+#print axioms A5O.Clock.strict_precedence_is_one_tick
+#print axioms A5O.Clock.strict_precedence_ps
+#print axioms A5O.Clock.revocation_defeats_later
+#print axioms A5O.Clock.not_standing_persists
+#print axioms A5O.Clock.one_state_per_tick
+#print axioms A5O.Clock.as_of_determined
+#print axioms A5O.Clock.exposure_at_most_one_tick
+#print axioms A5O.Clock.exposure_ps
+#print axioms A5O.Clock.stale_gate_passes_after_revocation
+#print axioms A5O.Clock.stale_gate_violates_bound
+#print axioms A5O.Clock.denominator_is_position_seven
+#print axioms A5O.Clock.seven_mul_ne
+#print axioms A5O.Clock.ten_pow_residue
+#print axioms A5O.Clock.four_hundred_over_seven_never_terminates
+#print axioms A5O.Clock.seconds_one_to_six_carry_remainder
+#print axioms A5O.Clock.seventh_second_resolves
+#print axioms A5O.Clock.ticks_in_seven_seconds

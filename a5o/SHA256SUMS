@@ -16,3 +16,9 @@ d550aeab2d87e978232db8d6ee704e408cfc5646b3b379ea08a86a9dd40649b9  a5o/correction
 dc15cb164d8f2d41516de6b4661db8535736847a8facfd02b2dd0d126d756d6e  a5o/corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Signed.pdf
 dcbeb5797a68a633c9ab104c1209aec22dd78a561b398098cea80b5303835b3d  a5o/corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Evidence Summary.pdf
 a1a2f76168d7a1ac571f5907102a4ce3ad15f507be09daa4f7f00b0f9a054d4f  a5o/corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Signed.pdf.ots
+67208b017217596dcdb47726fa0fa490bbabab664ae50d1851aa036501fed772  a5o/v4/clock/ClockStandard.lean
+064d7da25bff41b432cb94f6f7f792017c75db61c77601b355a5437108e1fa14  a5o/v4/clock/ClockStandard-partI.lean
+01289d8f6b1e06b69bf2139976e18c7b84b21152012a15d1544c56d817a383c3  a5o/v4/clock/Check.lean
+15643dcb3a62a4336fc1f66e7d41dcad239739e6ecfbdb343affc2742b160eef  a5o/v4/clock/axioms.txt
+2a16e4c6a73ac11e835909a8eb7a2b429999f3052e34c62de7709948088d7986  a5o/v4/clock/ClockStandard.lean-SIGNED-c402256c.pdf
+e3d4abee8c4536c9077b98757e4578612a142d7c822ca2b21a669bb0bb7e0254  a5o/v4/clock/ClockStandard-partI.lean-SIGNED-21127e3c.pdf
