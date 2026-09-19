@@ -33,9 +33,14 @@ consistent with Amendment A1 item 2 (Brief 4).
 ## OpenTimestamps
 
 Five proofs — `ClockStandard.lean`, `ClockStandard-partI.lean`, both signed
-PDFs, `clock-commit-hash.txt` — stamped 2026-09-19, **pending** Bitcoin
-confirmation as of 2026-09-19T15:10:28Z. Upgrade and block heights to
-follow once the calendars have had at least one block.
+PDFs, `clock-commit-hash.txt` — stamped 2026-09-19T15:10:28Z, **upgraded**
+2026-09-19T17:37:55Z: `BitcoinBlockHeaderAttestation`, block 967720, merkle
+root `6103bcbe4da52338ca0e7d8f293a848f482232eeb413d27099ee498e8f77be44`,
+confirmed via one calendar path (`btc.calendar.catallaxy.com`) and
+independently cross-checked against mempool.space directly, which reports
+the same height and merkle root. The other two calendar paths remain
+pending on these same files; `ots upgrade` reports a proof complete once
+one path resolves.
 
 ## Giza and DataCenter, both versions each (Brief 6, `AOB-CC-2026-09-19-0003`)
 
