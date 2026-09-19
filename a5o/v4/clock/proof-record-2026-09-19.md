@@ -84,19 +84,25 @@ upgraded this pass.
 
 ## Envelope chain
 
-Seven envelopes now stand on the record: `f26f357a…` (7 Dec 2025),
-`21127e3c…`, `c402256c…`, `086cb5ec…`, `38b10c0e…`, `100dc094…`,
-`ac8d691d…` (19 Sep 2026, all six above). All seven signed by the same
-recipient, from the same signing IP on each occasion — the IP itself and
-the recipient's email are recorded on the Evidence Summaries in the
-private `a5o-lean` repo only, not reproduced here. An eighth candidate
-link, claimed against a 25 Aug 2026 `A5O.lean` signature, remains
-withdrawn: the two candidate instruments (`8017d707…`, 28 Aug;
-`e711736d…`, 29 Aug) don't carry that date as their signing date (25 Aug
-is the *seal* date printed on `8017d707…`'s cover page), and neither
-instrument's Evidence Summary is in hand to check. Restorable only if one
-surfaces and shows the matching signing IP; until then the chain is
-seven envelopes, not eight.
+Eight envelopes stand on the record: `f26f357a…` (7 Dec 2025),
+`e711736d…` (29 Aug 2026), `21127e3c…`, `c402256c…`, `086cb5ec…`,
+`38b10c0e…`, `100dc094…`, `ac8d691d…` (19 Sep 2026). All eight signed by
+the same recipient, from the same signing IP on each occasion — the IP
+itself and the recipient's email are recorded on the Evidence Summaries
+in the private `a5o-lean` repo only, not reproduced here.
+
+This closes what earlier stood as an open, then withdrawn, fourth link.
+The originating note placed the shared signing IP on "a 25 Aug 2026
+`A5O.lean` signature" with no envelope ID; both candidate instruments
+were checked once their Evidence Summaries were obtained: `e711736d…`
+(the `.tex` source, signed 29 Aug) shares the common signing IP on
+every audit-trail event and is now part of the chain; `8017d707…` (the
+compiled paper, signed 28 Aug, the source of the "25 Aug" *seal* date
+that caused the original conflation) was signed from a different
+network on both its create and sign events, and is not. `b21d28c9…`
+(`a5o-paper-2`, superseded by `-3` two minutes before its own
+completion) was also checked and adds nothing — same evening, same
+non-matching network, not a stamped file.
 
 ---
 
