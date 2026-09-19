@@ -1,0 +1,8 @@
+'A5O.KillSwitch.survives_iff_not_forgeable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A5O.KillSwitch.same_well_defeated' does not depend on any axioms
+'A5O.KillSwitch.second_signature_same_well_defeated' does not depend on any axioms
+'A5O.KillSwitch.survival_requires_independent_root' does not depend on any axioms
+'A5O.KillSwitch.boundary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'A5O.KillSwitch.independent_root_not_sufficient' does not depend on any axioms
+'A5O.KillSwitch.revocation_survives_minimal_compromise' does not depend on any axioms
+'A5O.KillSwitch.revocation_survives_iff' does not depend on any axioms
