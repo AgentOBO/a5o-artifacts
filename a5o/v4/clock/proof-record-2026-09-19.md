@@ -40,16 +40,17 @@ follow once the calendars have had at least one block.
 ## IP chain
 
 Three envelopes confirmed on the record: `f26f357a…` (7 Dec 2025),
-`21127e3c…` and `c402256c…` (today, both above) — all signed from
-`62.215.38.249`. A fourth link, claimed against a 25 Aug 2026 `A5O.lean`
+`21127e3c…` and `c402256c…` (today, both above) — all signed from the
+same signing IP recorded on their Evidence Summaries (private repo; not
+reproduced here). A fourth link, claimed against a 25 Aug 2026 `A5O.lean`
 signature, is withdrawn: the note that made the claim carried no envelope
 ID, the two candidate instruments (`8017d707…`, 28 Aug; `e711736d…`, 29
 Aug) don't carry that date directly (the 25 Aug date is the *seal* date
 printed on `8017d707…`'s cover page, not its signing date — the likely
 source of the conflation), and neither instrument's Evidence Summary is
 in hand on either machine to check the signing IP. Restorable only if one
-of those two summaries surfaces and shows `62.215.38.249` on the signing
-action; until then the chain is three envelopes, not four.
+of those two summaries surfaces and shows the matching signing IP;
+until then the chain is three envelopes, not four.
 
 ---
 
