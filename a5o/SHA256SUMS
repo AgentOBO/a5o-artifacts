@@ -45,3 +45,13 @@ bbe373fb102566ee99c4640176e3379433d32d987045cfdea4fdbd6018e102eb  a5o/v4/clock/d
 7a0f6c4b06c26abd6d121fc6a880d59d7c21c655c9289c6ce67cc2bb60808be0  a5o/v4/clock/datacenter/axioms-preframing.txt
 a08bbe08e12f1ee7eaa07de9274dd5b22d138bbd849b7e4f647c6f23e53c0ca9  a5o/v4/clock/datacenter/DataCenter.lean-SIGNED-ac8d691d.pdf
 d3c6147ddcf4fc4774bd0c1d48f12956d13c6380211a9eb064b71b9fe5a54abd  a5o/v4/clock/datacenter/DataCenter-preframing.lean-SIGNED-100dc094.pdf
+2d1322e8deacb2dcf69989008dabae01b540bfc10fb2e9ed48c390c1712c99d7  a5o/v4/clock/giza-datacenter-commit-hash.txt
+1f683362287601a16d66eba992b8f810cae3cf442f3aa849f6bbd9c3be871033  a5o/v4/clock/giza/Giza.lean.ots
+915a7167f6c0ccc75a170b01772670ba5c1f80f65da35a7606418fbafcb97415  a5o/v4/clock/giza/Giza-preframing.lean.ots
+9a10f4091d0a489926b579f0cee9079396f04bfeadd5945ff01f535c82db8242  a5o/v4/clock/giza/Giza.lean-SIGNED-38b10c0e.pdf.ots
+d093f3cd44087c00b2228888956447e390aeb4ebff975085cf791f2c8fbf0e40  a5o/v4/clock/giza/Giza-preframing.lean-SIGNED-086cb5ec.pdf.ots
+e69de01abe40769e15dd04b71da2b194be06aef5eb32ad8caf85319053a70844  a5o/v4/clock/datacenter/DataCenter.lean.ots
+bb5806738f1cfdb079ac36bba62e587307cac1e456e0e24a0f92c30260a1976d  a5o/v4/clock/datacenter/DataCenter-preframing.lean.ots
+f354f9899264e40b9850e054ddb3f28c60fa74cb71f1285fa77c1733af4cff54  a5o/v4/clock/datacenter/DataCenter.lean-SIGNED-ac8d691d.pdf.ots
+1b062cc619011e90caf575b42dbc46f45a6f9a9af3db2d1585e5fc8bf0fe4e08  a5o/v4/clock/datacenter/DataCenter-preframing.lean-SIGNED-100dc094.pdf.ots
+bc18e4c4ff802fdccecf5214866a5bff40cc6be899e114908f5b455c0890ef5d  a5o/v4/clock/giza-datacenter-commit-hash.txt.ots
