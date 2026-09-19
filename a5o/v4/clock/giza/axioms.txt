@@ -1,0 +1,14 @@
+'A5O.Giza.cubit_denominator' does not depend on any axioms
+'A5O.Giza.giza_pi' does not depend on any axioms
+'A5O.Giza.clock_is_giza_pi_plus_54' does not depend on any axioms
+'A5O.Giza.period_is_seven_remainders' does not depend on any axioms
+'A5O.Giza.light_per_tick_value' does not depend on any axioms
+'A5O.Giza.light_per_tick_is_ten_cubits' does not depend on any axioms
+'A5O.Giza.tick_ratio_is_giza_pi' does not depend on any axioms
+'A5O.Giza.height_ticks_eq_fingers' does not depend on any axioms
+'A5O.Giza.F1_same_divisor' does not depend on any axioms
+'A5O.Giza.F2_space' does not depend on any axioms
+'A5O.Giza.F2_time' does not depend on any axioms
+'A5O.Giza.F2_time_not_before' does not depend on any axioms
+'A5O.Giza.F3_bound' does not depend on any axioms
+'A5O.Giza.F3_pyramid_in_ticks' does not depend on any axioms
