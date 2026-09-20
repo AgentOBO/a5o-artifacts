@@ -326,5 +326,24 @@ point. Full account, including the button-by-button verification round
 the trace itself records: [`v5/README.md`](v5/README.md) and
 [`v5/closure/pre-attestation-verification-2026-09-12.md`](v5/closure/pre-attestation-verification-2026-09-12.md).
 
+## specimens/2026-09-20 — USPTO SOU specimen captures, date-anchored
+
+Four signed captures, each a Statement of Use specimen for a trademark
+filing — the artifact of record is the capture's existence at a
+provable date, not a mathematical claim. Evidence Summaries (signer
+email, per-event IP addresses) are not published here; they and their
+own OTS proofs are in the private `a5o-lean` repository alongside this
+record's other Evidence Summaries.
+
+| Title | SHA-256 | Envelope | OTS |
+|---|---|---|---|
+| A⁵O Governance Operator - Lean 4 \| Agent OBO USPTO - SOU - Specimen | `b55fefe42fc5160281958acb63ebace54b22f3aec6375fd78fa57d9f19036e22` | `8c33307a-79bf-47d9-8c5a-8f4e7c8a4441` | pending — checked at 2026-09-20T08:31:33Z |
+| AgentOBO.ai – Appointed AI That Acts On behalf of You. USPTO - SOU - Specimen | `aa788672b1e036d0f7b2a3d45e4c55a2e9be50840d7c70a945ba3a2313c0efa0` | `7b2388d9-f2a5-46c3-99fd-e18c5ce04713` | pending — checked at 2026-09-20T08:31:33Z |
+| A⁵O Governance Operator - Lean 4 \| Agent OBO - USPTO -Specimen - SOU | `ce9baafa46ca4fea8819a465788ec39008ade200f8bef08155a638d27f1dafa3` | `ef96322c-27ea-4836-a1c6-2241c9074fbf` | pending — checked at 2026-09-20T08:31:33Z |
+| AgentOBO.ai – Appointed AI That Acts On behalf of You. - USPTO - SOU - Specimen | `73882697c89326210804dc3d8859c6e2c0e40f76d093df2d91e9f9f996e065d2` | `d7098983-f882-4f78-b130-f4f612b4f546` | pending — checked at 2026-09-20T08:31:33Z |
+
+All four signed 2026-09-20, from the same signing IP recorded on each
+envelope's Evidence Summary (private repo, not reproduced here).
+
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
