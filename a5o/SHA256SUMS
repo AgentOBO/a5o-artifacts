@@ -55,3 +55,16 @@ e3967f3f6771f1f42d7962ad6e164bf8b1f8bf8635252644e528e141143ad59d  a5o/v4/clock/d
 3af944fab99a711219eba3e83df03020b0ee9eeba6c0ba10c170dbfa6b4a29a3  a5o/v4/clock/giza-datacenter-commit-hash.txt.ots
 79b1af73f9fa6c2963e939620a1bc2165dd1c023f4eaa860928859029b64c6b0  a5o/v4/clock/proof-record-2026-09-19.md
 78c0ea6bafdab6f54c3cbbef91ac66cb1d5ee0bc4879000ba6e08f145719c752  a5o/README.md
+244e8a5caac2080d975fb2ba017e056ff0d68192f62ed683ec48e1531a6cf2bc  a5o/v4/hops/Hops.lean.ots
+72996bc054fa0708a9b078b44c55181277d87ce807ec3e6fb329d33f964aefb0  a5o/v4/hops/HopsWitness.lean.ots
+369d6d15480b520ba2eb6134a0389ebfa59ea46b012577ea8c3167ae360fa3c2  a5o/v4/hops/Ten.lean.ots
+e5cc2bb77bb9922801c2fb066555d4800c251d7aa7defd98fc314dd785a361a5  a5o/v4/hops/TenWitness.lean.ots
+ea2033483d6ccdb2ae380f34af62c3449fdc56b776c509c0bbd8e7e782758306  a5o/v4/hops/KillSwitchA5O.lean.ots
+01b9c3955dd61fa8b9d2ba0ecd1fef7a745a16c138a6b49a5d422e519967ad07  a5o/v4/companion/KillSwitch.lean.ots
+a0f416f96ed348dd7a77a28098da12551d4a51931e9fedc3458e95b2666f1dc6  a5o/v4/closure/Hops.lean-SIGNED-2bce620d.pdf.ots
+d328a6f33dc14a39674997d07f5cee45de31bc53f5360ab8dd2ca17a82114aae  a5o/v4/closure/HopsWitness.lean-SIGNED-3d443f2f.pdf.ots
+39f9fc470882a630aa9ae98350e845d8d4f5998de75c76cee0e86664f8350ce2  a5o/v4/closure/Ten.lean-SIGNED-be2f97fb.pdf.ots
+318f2112e0641abf988c60c53507aec30449a893d8b05003ba2c5f5fd2057aba  a5o/v4/closure/TenWitness.lean-SIGNED-95e52e67.pdf.ots
+8032b046be1256a998f6812d912f736d2e8438c776998720b89ff9522aeb7912  a5o/v4/closure/TenWitness.lean-SIGNED-21a38dd6.pdf.ots
+4e5c129b9c60b6f261ed73a4ba3c0912eef62d8cbb80f1ddc368f3422246b1bd  a5o/v4/closure/KillSwitchA5O.lean-SIGNED-36801c69.pdf.ots
+89439313fcfc14054bcee2359809a569ed8f2d1258a0e250dccbb77c7c9299ef  a5o/v4/closure/KillSwitch.lean-SIGNED-3e4cd29d.pdf.ots
