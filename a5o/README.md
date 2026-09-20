@@ -197,5 +197,134 @@ Its OpenTimestamps proof is attested at Bitcoin blocks 965908 and 965933
 (two of three calendars, independently verified against mempool.space;
 `finney.calendar.eternitywall.com` remains `PendingAttestation`).
 
+## v4/clock — three physical claims, checked as arithmetic
+
+Three texts, each in a pre-framing and a framed version — the pre-framing
+file is the arithmetic on its own; the framed version adds one section
+relating that arithmetic back to `A5O.lean` v4's ledger. Both versions of
+each text are signed and committed; all six compile clean under Lean
+4.33.1, zero `sorry`, zero axioms on every theorem.
+
+**`clock/ClockStandard.lean`** and **`clock/ClockStandard-partI.lean`** —
+`A5O-CLK-1.0` restated as integer arithmetic in picoseconds, separating
+what the January 2026 disclosure's "17.5 ns / 57.142857 MHz / 57 million
+checks per core" language actually forces (the period-frequency identity,
+the exact tick count, and that "57.142857" is a six-digit truncation of
+400/7, not an exact value) from the physical claims it doesn't (one check
+per tick, one gate per core — recorded as explicit hypotheses, not
+proved). The framed version's own header labels itself as putting the
+clock "as **the time axis of the proof**" — relating tick count directly
+to `A5O.lean`'s abstract `Time`.
+
+| File | SHA-256 | Envelope | OTS blocks |
+|---|---|---|---|
+| `ClockStandard.lean` (framed, 24 theorems) | `67208b017217596dcdb47726fa0fa490bbabab664ae50d1851aa036501fed772` | `c402256c-70aa-4cd3-baae-46e34cb247c8` | 967720 |
+| `ClockStandard-partI.lean` (7 theorems) | `064d7da25bff41b432cb94f6f7f792017c75db61c77601b355a5437108e1fa14` | `21127e3c-ba26-4b28-bc14-5723513231a0` | 967720 |
+
+**`clock/Giza.lean`** and **`clock/Giza-preframing.lean`** — the same
+clock constants checked against the Great Pyramid's standard survey
+figures (Petrie 1883; Lehner). Both versions' headers self-label
+**"(exploratory)"** and state plainly that "reading of the results is
+overlay" — the arithmetic is real (it compiles, zero axioms), but the
+file itself disclaims any causal or intentional relationship between the
+clock spec and the pyramid's proportions; it establishes only that a
+numerical coincidence exists and states its exact size.
+
+| File | SHA-256 | Envelope | OTS blocks |
+|---|---|---|---|
+| `Giza.lean` (framed, 14 theorems) | `8d65c1ad59dd3064b39effda8bed51fd8bfc4859f1c126ecb42e3eea9e82bbb6` | `38b10c0e-a43b-40cf-b73e-a05db38e1267` | 967728, 967736, 967784 |
+| `Giza-preframing.lean` (8 theorems) | `9ad53612a37bbbd7d988763a37b1dcdcbd1106d5fb9eadf5e176342a242b7297` | `086cb5ec-2d83-46bd-996e-2d91add8f1e0` | 967728, 967784 |
+
+**`clock/DataCenter.lean`** and **`clock/DataCenter-preframing.lean`** —
+what `GateReadsLedger` (the gate reads the ledger every tick) requires
+physically: a ledger read is a round trip, and light-speed alone bounds
+how far the ledger can be from the gate inside one 17,500 ps tick. Also
+self-labels **"(exploratory)"**; its framed section separately describes
+the Clock Standard itself as **"a conversion table"** between geography
+and latency — establishing the distance/latency budget the ledger must
+fit inside, not a claim about any real deployment's actual topology.
+
+| File | SHA-256 | Envelope | OTS blocks |
+|---|---|---|---|
+| `DataCenter.lean` (framed, 9 theorems) | `043f11bc92902336af52381e775de07fd7b7f06fbb0070c8b6c5d4c674893d20` | `ac8d691d-a18b-4b98-95e3-bf108e01dee6` | 967728, 967736, 967784 |
+| `DataCenter-preframing.lean` (8 theorems) | `83c5ef72bc05fd5c5b7a996d0bf9414ffe7a95a5f4e48c79faf9e2655ce23dec` | `100dc094-1fc6-433f-b0f3-b4d13e7896d1` | 967728, 967736, 967784 |
+
+All six OTS proofs verified independently, twice — walking each `.ots`
+file's own append/prepend/SHA-256 operation tree (not trusting the
+verifier's printed claim alone), then recomputing each claimed block's
+hash and proof-of-work from a freshly-fetched raw 80-byte header, cross-
+checked between mempool.space and blockstream.info. Full detail, envelope
+timestamps, and the two-machine cross-verification of this record:
+[`v4/clock/proof-record-2026-09-19.md`](v4/clock/proof-record-2026-09-19.md).
+
+## v4/hops — the delegation-chain lineage, and its companion
+
+Five files proving one claim: a multi-hop appointment chain is not a new
+object — an appointed agent that appoints is, at that hop, a principal
+under the *same* gate, against the *same* ledger, all the way to a root.
+`Hops.lean` (one gate at any hop depth) and `HopsWitness.lean` (a
+concrete two-hop satisfiability witness) import `A5O.lean` v4 and
+`Closure.lean` unmodified. `Ten.lean` adds ten closures on top —
+scope attenuation, root uniqueness, time-indexed acyclicity, principal
+identification, receipt non-persistence, deny-path decidability,
+revocation permanence, corporate-quorum uniqueness, ledger
+linearizability, and a fixed-point closure — with `TenWitness.lean`
+discharging its hypotheses on the same concrete model. `KillSwitchA5O.lean`
+restates a kill-switch-survival result over v4's own `O`/`Appointed`/`R`/
+`Revoke`. All five: zero `sorry`, 52 `#print axioms` lines, all
+zero-dependency.
+
+`a5o/v4/companion/KillSwitch.lean` is kept separate rather than a sixth
+`hops/` file: a standalone formalization of the same claim (not derived
+from `A5O.lean`), with two of its eight theorems depending on
+`[propext, Classical.choice, Quot.sound]` — kept out of `hops/` so that
+directory's zero-axiom property holds per-directory, not just per-file.
+
+| File | SHA-256 | Envelope | OTS blocks |
+|---|---|---|---|
+| `hops/Hops.lean` | `ca7a950d3c9eaf6004b665a91e9c32e7ecedcab489ad2a43d21e3bc0d966f090` | `2bce620d-5dd1-4194-bfd0-25ca858a60cf` | 967682, 967703, 967720 |
+| `hops/HopsWitness.lean` | `b2ce30f00de251112416215c4154b2d15de4041601285c1bcb9ada9d75ac8d37` | `3d443f2f-e7b3-4a3d-8415-e5f57c350ffe` | 967682, 967703, 967720 |
+| `hops/Ten.lean` | `294d1de78a8956160e310f33ad2bc6984664d00e9a6c87e94eae3183cb73328a` | `be2f97fb-8c56-48be-b416-8900e9b00b39` | 967682, 967703, 967720 |
+| `hops/TenWitness.lean` | `ab22dfcafbfd483a948988242fe651d35b1a637f6487b123ebe3ab2cdfca413d` | `95e52e67-a8b8-42b1-a2ac-4bf66438ed27` (+ duplicate `21a38dd6…`) | 967682, 967703, 967720 |
+| `hops/KillSwitchA5O.lean` | `069ca673b69e6c67ed8f0d68f1d84da96f1407f0065b071c8fdf936558c3cd15` | `36801c69-3074-4840-b9bc-90ca06348164` | 967682, 967703, 967720 |
+| `companion/KillSwitch.lean` (2 of 8 theorems classical) | `d55dfa11d6643a7294f6dc76e6edbbd3e0ee3b0cfdeafa1abbd47407f3ca69b6` | `3e4cd29d-2a46-4d6b-9f68-b3e0465cc46e` | 967682, 967703, 967720 |
+
+Full signature register and the two corrections carried forward with
+this lineage (`Ten.lean`'s acyclicity result is time-indexed, not a
+party-level non-recurrence claim; `KillSwitchA5O.lean` carries forward
+only the already-constructive results from `KillSwitch.lean`, not its
+two classical theorems): [`v4/closure/hops-companion-closure-2026-09-19.md`](v4/closure/hops-companion-closure-2026-09-19.md).
+
+## v5 — the live gate's deployment closure
+
+`A5O.lean` and `Closure.lean` here are unmodified copies of the sealed v4
+files (same hashes as above). `Deployment.lean` models `theapertures.app`'s
+public surface as a `GatedSystem` and proves accountability over every
+execution conditional on one hypothesis, `NoSideChannel` — a claim about
+the running server that a Lean proof from the public surface alone can't
+establish. `adapter/AperturesTrace_20260912.lean` closes that gap for a
+specific, bounded production window: it embeds a signed trace (nine
+receipts, four executions, ledger seq 30–32) and proves
+`DecisionsFollowChecker`, `NoSideChannel`, and `UniqueReceiptIds` by
+computation over those concrete rows, reaching a concrete instance of
+`apertures_trace_accountable`. The two remaining obligations —
+`CheckersSound` and `CoversActualExecutions` — are claims about the
+server's own code, not the trace, and are supplied by two signed operator
+attestations rather than proved.
+
+| Item | SHA-256 | Envelope | OTS blocks |
+|---|---|---|---|
+| `Deployment.lean` | `e07c69ae33d1d77e3c8e657f12f8a0fb58d233e8fd5873557c6564afcfdd59da` | — | 966551, 966586 |
+| `adapter/AperturesTrace_20260912.lean` | `96369a093189710eac6d6b2e3748d00f9996bb12a9045d15a4d38656de756e0b` | — | — |
+| `adapter/AperturesTrace_20260912.json` (the signed trace) | `c5ba5e2cfa4be0f8e9f9a97259f3bdaf2666fe7bb85d44d03d039e9803e19ed5` | — | — |
+| `closure/Operator_Attestation_1of2_CheckersSound-2.pdf` | — | `faee154a-6a7a-40d9-9937-3d10ab75f0d2` | 966664 |
+| `closure/Operator_Attestation_2of2_CoversActualExecutions-2.pdf` | — | `4a3121ab-db3f-4dcf-a760-980b11acbb56` | 966664 |
+
+Both attestations are scoped to `apertures-app` commit `f683e50` and
+ledger sequence 32; a superseding attestation is required beyond that
+point. Full account, including the button-by-button verification round
+the trace itself records: [`v5/README.md`](v5/README.md) and
+[`v5/closure/pre-attestation-verification-2026-09-12.md`](v5/closure/pre-attestation-verification-2026-09-12.md).
+
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
