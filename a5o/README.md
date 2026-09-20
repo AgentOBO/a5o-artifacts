@@ -328,12 +328,14 @@ the trace itself records: [`v5/README.md`](v5/README.md) and
 
 ## specimens/2026-09-20 — USPTO SOU specimen captures, date-anchored
 
-Four signed captures, each a Statement of Use specimen for a trademark
-filing — the artifact of record is the capture's existence at a
-provable date, not a mathematical claim. Evidence Summaries (signer
-email, per-event IP addresses) are not published here; they and their
-own OTS proofs are in the private `a5o-lean` repository alongside this
-record's other Evidence Summaries.
+Eight signed captures, each a Statement of Use specimen for a
+trademark filing — the artifact of record is the capture's existence
+at a provable date, not a mathematical claim. Evidence Summaries
+(signer email, per-event IP addresses) are not published here; they
+and their own OTS proofs are in the private `a5o-lean` repository
+alongside this record's other Evidence Summaries.
+
+**Governance Operator / AgentOBO.ai marks:**
 
 | Title | SHA-256 | Envelope | OTS |
 |---|---|---|---|
@@ -342,7 +344,20 @@ record's other Evidence Summaries.
 | A⁵O Governance Operator - Lean 4 \| Agent OBO - USPTO -Specimen - SOU | `ce9baafa46ca4fea8819a465788ec39008ade200f8bef08155a638d27f1dafa3` | `ef96322c-27ea-4836-a1c6-2241c9074fbf` | pending — checked at 2026-09-20T08:31:33Z |
 | AgentOBO.ai – Appointed AI That Acts On behalf of You. - USPTO - SOU - Specimen | `73882697c89326210804dc3d8859c6e2c0e40f76d093df2d91e9f9f996e065d2` | `d7098983-f882-4f78-b130-f4f612b4f546` | pending — checked at 2026-09-20T08:31:33Z |
 
-All four signed 2026-09-20, from the same signing IP recorded on each
+**ONEBEHALFOF™ mark — Receipt Verifier captures:** two print-to-PDF
+captures of the live verifier page and two image screenshots; see
+[`onebehalfof-receipt-verifier-record.md`](onebehalfof-receipt-verifier-record.md)
+for the full record, a correction to the original intake claim about
+one capture's content, and a note on signing-timestamp precision.
+
+| Title | SHA-256 | Envelope | OTS |
+|---|---|---|---|
+| ONEBEHALFOF Receipt Verifier — A⁵O Public Evidence Surface - USPTO - Specimen - SOU (9pp print-to-PDF) | `2b88aa57bc0ed48a347016d1cb8bc35ac3962c36bf178cb7fc5928bc29bbfa22` | `9882cb4a-7743-4871-98bb-278e8725b96e` | pending |
+| ONEBEHALFOF Receipt Verifier — A⁵O Public Evidence Surface - USPTO - SOU - Specimen (1pp print-to-PDF) | `796be8b1a8a424b2f45d8437f6edfcd9577ab26936c2f175224ada01faaaeba2` | `27e39a3d-c6c3-4879-bb12-76ea57483e6f` | pending |
+| Screenshot 2026-09-20 at 12.32.07 PM (image capture) | `7cdea8debb4a69a1883ef6121b32da3994ad70ba55f33fad233c733def3b1068` | `c73e720d-6ee2-4d2c-a78e-94f175c4793b` | pending |
+| Screenshot 2026-09-20 at 12.37.02 PM (image capture) | `c448b57b3791c4b195e075d6b22333d70592901bd104dd292f6b43e49f7ec393` | `aaa4e39b-8161-4e27-b0a1-16f4595a6986` | pending |
+
+All eight signed 2026-09-20, from the same signing IP recorded on each
 envelope's Evidence Summary (private repo, not reproduced here).
 
 Verified, not ratified. Ratification is reserved to the Appointed
