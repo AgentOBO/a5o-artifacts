@@ -339,10 +339,10 @@ alongside this record's other Evidence Summaries.
 
 | Title | SHA-256 | Envelope | OTS |
 |---|---|---|---|
-| A⁵O Governance Operator - Lean 4 \| Agent OBO USPTO - SOU - Specimen | `b55fefe42fc5160281958acb63ebace54b22f3aec6375fd78fa57d9f19036e22` | `8c33307a-79bf-47d9-8c5a-8f4e7c8a4441` | pending — checked at 2026-09-20T08:31:33Z |
-| AgentOBO.ai – Appointed AI That Acts On behalf of You. USPTO - SOU - Specimen | `aa788672b1e036d0f7b2a3d45e4c55a2e9be50840d7c70a945ba3a2313c0efa0` | `7b2388d9-f2a5-46c3-99fd-e18c5ce04713` | pending — checked at 2026-09-20T08:31:33Z |
-| A⁵O Governance Operator - Lean 4 \| Agent OBO - USPTO -Specimen - SOU | `ce9baafa46ca4fea8819a465788ec39008ade200f8bef08155a638d27f1dafa3` | `ef96322c-27ea-4836-a1c6-2241c9074fbf` | pending — checked at 2026-09-20T08:31:33Z |
-| AgentOBO.ai – Appointed AI That Acts On behalf of You. - USPTO - SOU - Specimen | `73882697c89326210804dc3d8859c6e2c0e40f76d093df2d91e9f9f996e065d2` | `d7098983-f882-4f78-b130-f4f612b4f546` | pending — checked at 2026-09-20T08:31:33Z |
+| A⁵O Governance Operator - Lean 4 \| Agent OBO USPTO - SOU - Specimen | `b55fefe42fc5160281958acb63ebace54b22f3aec6375fd78fa57d9f19036e22` | `8c33307a-79bf-47d9-8c5a-8f4e7c8a4441` | confirmed — Bitcoin blocks 967815, 967821 |
+| AgentOBO.ai – Appointed AI That Acts On behalf of You. USPTO - SOU - Specimen | `aa788672b1e036d0f7b2a3d45e4c55a2e9be50840d7c70a945ba3a2313c0efa0` | `7b2388d9-f2a5-46c3-99fd-e18c5ce04713` | confirmed — Bitcoin blocks 967815, 967821 |
+| A⁵O Governance Operator - Lean 4 \| Agent OBO - USPTO -Specimen - SOU | `ce9baafa46ca4fea8819a465788ec39008ade200f8bef08155a638d27f1dafa3` | `ef96322c-27ea-4836-a1c6-2241c9074fbf` | confirmed — Bitcoin blocks 967815, 967821 |
+| AgentOBO.ai – Appointed AI That Acts On behalf of You. - USPTO - SOU - Specimen | `73882697c89326210804dc3d8859c6e2c0e40f76d093df2d91e9f9f996e065d2` | `d7098983-f882-4f78-b130-f4f612b4f546` | confirmed — Bitcoin blocks 967815, 967821 |
 
 **ONEBEHALFOF™ mark — Receipt Verifier captures:** two print-to-PDF
 captures of the live verifier page and two image screenshots; see
@@ -352,10 +352,10 @@ one capture's content, and a note on signing-timestamp precision.
 
 | Title | SHA-256 | Envelope | OTS |
 |---|---|---|---|
-| ONEBEHALFOF Receipt Verifier — A⁵O Public Evidence Surface - USPTO - Specimen - SOU (9pp print-to-PDF) | `2b88aa57bc0ed48a347016d1cb8bc35ac3962c36bf178cb7fc5928bc29bbfa22` | `9882cb4a-7743-4871-98bb-278e8725b96e` | pending |
-| ONEBEHALFOF Receipt Verifier — A⁵O Public Evidence Surface - USPTO - SOU - Specimen (1pp print-to-PDF) | `796be8b1a8a424b2f45d8437f6edfcd9577ab26936c2f175224ada01faaaeba2` | `27e39a3d-c6c3-4879-bb12-76ea57483e6f` | pending |
-| Screenshot 2026-09-20 at 12.32.07 PM (image capture) | `7cdea8debb4a69a1883ef6121b32da3994ad70ba55f33fad233c733def3b1068` | `c73e720d-6ee2-4d2c-a78e-94f175c4793b` | pending |
-| Screenshot 2026-09-20 at 12.37.02 PM (image capture) | `c448b57b3791c4b195e075d6b22333d70592901bd104dd292f6b43e49f7ec393` | `aaa4e39b-8161-4e27-b0a1-16f4595a6986` | pending |
+| ONEBEHALFOF Receipt Verifier — A⁵O Public Evidence Surface - USPTO - Specimen - SOU (9pp print-to-PDF) | `2b88aa57bc0ed48a347016d1cb8bc35ac3962c36bf178cb7fc5928bc29bbfa22` | `9882cb4a-7743-4871-98bb-278e8725b96e` | confirmed — Bitcoin blocks 967821, 967825, 967860 |
+| ONEBEHALFOF Receipt Verifier — A⁵O Public Evidence Surface - USPTO - SOU - Specimen (1pp print-to-PDF) | `796be8b1a8a424b2f45d8437f6edfcd9577ab26936c2f175224ada01faaaeba2` | `27e39a3d-c6c3-4879-bb12-76ea57483e6f` | confirmed — Bitcoin blocks 967821, 967825, 967860 |
+| Screenshot 2026-09-20 at 12.32.07 PM (image capture) | `7cdea8debb4a69a1883ef6121b32da3994ad70ba55f33fad233c733def3b1068` | `c73e720d-6ee2-4d2c-a78e-94f175c4793b` | confirmed — Bitcoin blocks 967821, 967825, 967860 |
+| Screenshot 2026-09-20 at 12.37.02 PM (image capture) | `c448b57b3791c4b195e075d6b22333d70592901bd104dd292f6b43e49f7ec393` | `aaa4e39b-8161-4e27-b0a1-16f4595a6986` | confirmed — Bitcoin blocks 967821, 967825, 967860 |
 
 All eight signed 2026-09-20, from the same signing IP recorded on each
 envelope's Evidence Summary (private repo, not reproduced here).

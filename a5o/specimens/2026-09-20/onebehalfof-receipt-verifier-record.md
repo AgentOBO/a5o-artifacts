@@ -52,9 +52,12 @@ than that.
 ## OpenTimestamps
 
 Four proofs — the four signed captures above — stamped 2026-09-20,
-pending. Each `.ots` verified via `ots info` against its own file's
-SHA-256 before commit. Upgrade (Bitcoin confirmation) follows on a
-later explicit sweep, per standing practice.
+**upgraded** 2026-09-20: `BitcoinBlockHeaderAttestation` at blocks
+967821, 967825, and 967860 for all four files. Each `.ots` re-verified
+via `ots info` against its own file's SHA-256 both before and after
+upgrade. All three block/merkle-root pairs cross-checked directly
+against mempool.space and blockstream.info independently, both
+agreeing on height and merkle root in every case.
 
 ---
 
