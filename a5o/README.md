@@ -180,8 +180,15 @@ citing v4 (`0e5ebe3f…`) as the repair.
 - `corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Signed.pdf`
   — SHA-256 `dc15cb164d8f2d41516de6b4661db8535736847a8facfd02b2dd0d126d756d6e`
   (the executed instrument)
-- `corrections/2026-09-07/Correction to the paper_ all nine axioms were individually inconsistent - Evidence Summary.pdf`
-  — SHA-256 `dcbeb5797a68a633c9ab104c1209aec22dd78a561b398098cea80b5303835b3d`
+
+The Evidence Summary for this envelope — the LegalZoom audit trail, which
+carries the signer's email and per-event IP addresses — was removed from
+this tree on 2026-09-20. It was committed here on 2026-09-07, before this
+project's later, general policy of keeping that document class private
+(the signed instrument is the public register; the audit trail is not).
+Removed from the live surface, not from git history — that history isn't
+rewritten. The address itself is part of the private, per-envelope
+signing-IP record kept alongside this repository, not reproduced here.
 
 Signed 2026-09-07T08:33:39Z, envelope `fa7e9727-b043-4764-a679-58df8d24147e`,
 signer `founder@agentobo.ai`. The sealed paper `.tex`/`.pdf` is unrevised;
