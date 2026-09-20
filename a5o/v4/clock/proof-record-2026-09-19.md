@@ -78,14 +78,23 @@ ClockStandard.
 ### OpenTimestamps
 
 Nine proofs — four `.lean` files, four signed PDFs,
-`giza-datacenter-commit-hash.txt` — stamped 2026-09-19, **pending** as of
-2026-09-19T17:24:38Z.
+`giza-datacenter-commit-hash.txt` — stamped 2026-09-19T17:24:38Z,
+**upgraded** 2026-09-20T03:51:57Z across three blocks (different
+calendar paths resolved independently per file):
 
-Checked in the same pass: ClockStandard's five proofs above show a real
-transaction on one calendar path, confirmed on-chain at 5 confirmations
-at check time, but not yet reported complete by that calendar's own
-upgrade check, and the other two calendar paths show no block yet — not
-upgraded this pass.
+| Height | Merkle root |
+|---|---|
+| 967728 | `57aff597b9004136ea9de160d284ba8cd1c59f8ac72aa400210c82a497c99d03` |
+| 967736 | `a27c668a4d320942f8cb3906efbfefefaedda9d760d5d52bdb74f7a7e0f1a0d4` |
+| 967784 | `6a8821d7fcdef7722a0cf94f1508b8e4672ce8a0df6fe3c695febbb30083bbb5` |
+
+All three verified at full depth: merkle root and block hash recomputed
+locally from the raw 80-byte header fetched fresh, proof-of-work checked
+against the header's own difficulty target, all agreeing between
+mempool.space and blockstream.info independently. `Giza-preframing.lean`'s
+proof resolves two of the three paths (967728, 967784); every other file
+resolves all three — both states exceed the one-path-suffices threshold
+`ots upgrade` applies.
 
 ## Envelope chain
 
