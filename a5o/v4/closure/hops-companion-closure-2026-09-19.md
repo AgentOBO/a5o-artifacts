@@ -48,6 +48,11 @@ to the corresponding source file above (per-page "Envelope ID" footer
 stamps excluded from the comparison); each source hash above was also
 independently reproduced by direct SHA-256 of the file on disk.
 
+**OpenTimestamps (2026-09-20).** All thirteen proofs — the five source
+files, `companion/KillSwitch.lean`, and the seven signed PDFs above —
+upgraded to Bitcoin-confirmed, blocks 967682, 967703, and 967720; each
+verified via `ots info` against its own source hash before commit.
+
 Signing-ceremony Evidence Summaries (which carry the signer's email and
 per-event IP addresses) are held off this public repository; they are an
 operator-internal record, not part of the mathematical or signature
