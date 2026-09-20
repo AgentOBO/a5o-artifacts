@@ -24,8 +24,9 @@ both `hops/` (52 lines, all zero-dependency) and `companion/` (8 lines,
 ## Signature register
 
 Seven signed envelopes, all recipient Fitzgerald J. Heslop
-(`founder@agentobo.ai`), every `Signed` audit-trail action from
-`62.215.38.249`, in signing order:
+(`founder@agentobo.ai`), every `Signed` audit-trail action from the same
+signing IP recorded on each envelope's Evidence Summary (private repo,
+not reproduced here), in signing order:
 
 | Envelope | Envelope name | Content | Signed (UTC) | Signed-PDF SHA-256 |
 |---|---|---|---|---|
@@ -52,6 +53,14 @@ independently reproduced by direct SHA-256 of the file on disk.
 files, `companion/KillSwitch.lean`, and the seven signed PDFs above —
 upgraded to Bitcoin-confirmed, blocks 967682, 967703, and 967720; each
 verified via `ots info` against its own source hash before commit.
+
+**Correction (2026-09-20).** The signature register above originally
+stated the seven envelopes' common signing IP in clear text. Edited to
+refer to it by reference (each envelope's private Evidence Summary)
+rather than reproduce it — the email above is unaffected, published
+contact rather than audit-trail data, per standing practice. This is an
+edit, not a scrub: the original text remains in this repository's git
+history, which is not rewritten.
 
 Signing-ceremony Evidence Summaries (which carry the signer's email and
 per-event IP addresses) are held off this public repository; they are an
