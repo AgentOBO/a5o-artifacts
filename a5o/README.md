@@ -362,3 +362,5 @@ envelope's Evidence Summary (private repo, not reproduced here).
 
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
+
+`a5o/periodic/` — exploratory: periodic-table reading, 63 theorems, zero axioms, overlay labelled, not part of the proof line.
