@@ -85,4 +85,15 @@ e811b6c1627ba93cf16087ecfcb30dc877d0ec4a846d731724f60a91d30dc47f  a5o/specimens/
 c448b57b3791c4b195e075d6b22333d70592901bd104dd292f6b43e49f7ec393  a5o/specimens/2026-09-20/Screenshot 2026-09-20 at 12.37.02 PM - ONEBEHALFOF - USPTO - SOU - Specimen - Signed.pdf
 25642bd184d5e859e0f19f3c56728fc59e176aa9b2b10712d3f870e7d9b3ab76  a5o/specimens/2026-09-20/Screenshot 2026-09-20 at 12.37.02 PM - ONEBEHALFOF - USPTO - SOU - Specimen - Signed.pdf.ots
 27d8e57a7537f16b84dcf3479d6541c3d373557e717ef1788f39fca0d8995af9  a5o/specimens/2026-09-20/onebehalfof-receipt-verifier-record.md
-ba62b2a3ba2504255a4ab6404fb13fb486ad7f70a01b651457e780028fe14d8e  a5o/README.md
+0e5ebe3f5113727ae0cd41ec4399661a352fcc4fb522fcfe7ef7be3318f6b452  a5o/v6/A5O.lean
+af6b3233bdeee80b8312a9138111c597d37f17b792a749d53844314e3a79a933  a5o/v6/Closure.lean
+e07c69ae33d1d77e3c8e657f12f8a0fb58d233e8fd5873557c6564afcfdd59da  a5o/v6/Deployment.lean
+6263ac8bf0c49aac2011595bd2d47f070b4b61e002e8fb2a19e00a993fcb06f1  a5o/v6/SyntheticNecessity.lean
+1ca1e304a78a326105c560973e173533c9615608ea18a965f51aa3b2a3fe6321  a5o/v6/Bridge.lean
+a55c58510a538885389ce5556e7a6656982b620d8a9504fb88b0dd5c08c8a05a  a5o/v6/Check.lean
+0764f38bc06ae7f9fc956358ee5fb4443014550000e059e8ecbb77f567dbcd09  a5o/v6/Check.out.txt
+4edd72ac8265b880b715bd65908783b3b15101dde98d6e96567b074ea83817bd  a5o/v6/closure/SyntheticNecessity.lean-SIGNED-6aa2d8b9.pdf
+dc7a8d0fe7df78010ab4ef5c9aaff76ba7fe3c14dc7eb439ffc55e6aec4f2306  a5o/v6/closure/Bridge.lean-SIGNED-5ae00e30.pdf
+294de9e5d4bf7c8914e16acac2f7b625d3122a9444a3c985bb6eae8e9cadfac7  a5o/v6/MANIFEST.sha256
+eedf74e964f7f47de1d7f6c36246e2fbcc78a8adfbe9914fbf3adae381a39ed3  a5o/v6/README.md
+54c2df6f7cf2ebd628793ff798380ef2e108ee63bf9a37e32e368cc90fc0f4e2  a5o/README.md

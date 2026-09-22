@@ -326,6 +326,23 @@ point. Full account, including the button-by-button verification round
 the trace itself records: [`v5/README.md`](v5/README.md) and
 [`v5/closure/pre-attestation-verification-2026-09-12.md`](v5/closure/pre-attestation-verification-2026-09-12.md).
 
+## v6 — synthetic necessity and the bridge to v5
+
+`SyntheticNecessity.lean` (13 theorems) proves a third-party
+accountability predicate naming none of v4's six conjuncts and shows it
+entails v4's `O` at a derived instance — closing an adversarial finding
+that a prior reduction theorem was analytic. `Bridge.lean` (8 theorems)
+identifies v5's deployed checkers with that independent predicate:
+`allow_requires_named_act` and `unnamed_act_denied` close the mandate
+seam as theorems over the checkers, and `trace_third_party_accountable`
+runs v5's full deployment chain to the independent predicate under one
+named coherence property of the resolver. 21 new declarations, all zero
+axioms; imports A5O.lean, Closure.lean (v4) and Deployment.lean (v5)
+unmodified. Two signed instruments; Evidence Summaries in the private
+`a5o-lean` repository only. Full account, including the corrected
+adversarial-control table:
+[`v6/README.md`](v6/README.md).
+
 ## specimens/2026-09-20 — USPTO SOU specimen captures, date-anchored
 
 Eight signed captures, each a Statement of Use specimen for a
