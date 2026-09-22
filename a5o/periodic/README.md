@@ -56,8 +56,23 @@ Re-verified by: Claude Code session, 2026-09-21, macOS (Darwin 25.5.0)
 
 ## Anchoring
 
-OpenTimestamps proofs (`*.ots`) sit beside the files they attest. Status:
-PENDING at commit time — updated only after `ots upgrade` and an independent
-block-explorer cross-check.
+OpenTimestamps proofs (`*.ots`) sit beside the files they attest.
+`MANIFEST.sha256`, `PeriodicTable.lean`, and this file's own pre-edit
+state (now `README-36b2d17f.md.ots`, prefix its SHA-256, per the
+`v4/closure` convention) confirmed 2026-09-21 at Bitcoin blocks 967980,
+967984, and 967999 — bob, finney, and catallaxy calendars each resolved
+on all three; alice was submitted to at stamp time but never landed a
+pending commitment in any proof. Block heights and merkle roots
+cross-checked independently against mempool.space and blockstream.info,
+both agreeing in every case:
+
+| Block | UTC | Merkle root |
+|---|---|---|
+| 967980 | 2026-09-21T11:42:07Z | `d42eb509aa8b58f4e6ccd0db5064029a40de8110db88ea1c41fdcbff5eada726` |
+| 967984 | 2026-09-21T12:04:35Z | `a11190beb05147dd77de001c5a0464248f1d392b437c1915a24e9eaee84a8cd0` |
+| 967999 | 2026-09-21T13:48:12Z | `58ce887fdbedecb174a4cfd08e73887625735c31ca810a7f3aada7390028593b` |
+
+This edit itself is a new committed state; its own `.ots` (this file's
+current bytes) is stamped fresh and starts PENDING.
 
 Verified, not ratified.
