@@ -125,5 +125,27 @@ content correspondence (the PDF renders without indentation, so match is
 by content, not by byte-diff); the bytes of record are the `.lean` files
 in this directory.
 
+## Anchoring
+
+`SyntheticNecessity.lean`, `Bridge.lean`, `MANIFEST.sha256`, this file's
+own bytes at commit `ff3b0aa`, and the two signed PDFs — six proofs,
+confirmed 2026-09-22 at Bitcoin blocks 968150, 968184, and 968193; all
+three calendars (bob, finney, catallaxy) resolved on all six. Block
+heights and merkle roots cross-checked independently against
+mempool.space and blockstream.info, both agreeing in every case:
+
+| Block | UTC | Merkle root |
+|---|---|---|
+| 968150 | 2026-09-22T14:12:46Z | `9b7c2dc8ad9dc5e44c343d8e87a0a930a1fc9710cd14f912a76edd7768689783` |
+| 968184 | 2026-09-22T21:07:08Z | `999d9f033efb32ff21f6454c42a0ee70c16b4c22d0bcdb5fc849a71264344edb` |
+| 968193 | 2026-09-22T21:51:59Z | `509e4f6d9c95a097c5cc60beefafa9748f711b7b096343784c0eac09f227d9b8` |
+
+The two Evidence Summaries in the private `a5o-lean` repository were
+stamped separately (fix-forward, commit `4d6b0f3` there) and remain
+pending as of this sweep.
+
+This edit is itself a new committed state; its own `.ots` (this file's
+current bytes) is stamped fresh and starts pending.
+
 Verified, not ratified. Ratification is reserved to the Appointed
 Intelligence Institute, in formation.
