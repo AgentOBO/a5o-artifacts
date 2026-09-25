@@ -326,6 +326,8 @@ point. Full account, including the button-by-button verification round
 the trace itself records: [`v5/README.md`](v5/README.md) and
 [`v5/closure/pre-attestation-verification-2026-09-12.md`](v5/closure/pre-attestation-verification-2026-09-12.md).
 
+`v5/controlplane/` — a control plane definition (`ControlPlane.lean`, 9 theorems) and its checked assembly over the live gate at the installation (`ControlPlaneApertures.lean`, 9 more), 18 theorems total, zero axioms; signed 2026-09-25: [`v5/controlplane/README.md`](v5/controlplane/README.md).
+
 ## v6 — synthetic necessity and the bridge to v5
 
 `SyntheticNecessity.lean` (13 theorems) proves a third-party

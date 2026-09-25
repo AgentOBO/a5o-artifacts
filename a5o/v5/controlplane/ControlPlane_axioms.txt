@@ -1,0 +1,9 @@
+'plane_decides_every_execution' does not depend on any axioms
+'plane_accountable' does not depend on any axioms
+'plane_single_governor' does not depend on any axioms
+'planes_agree_on_governor' does not depend on any axioms
+'plane_within_canonical' does not depend on any axioms
+'revocation_halts_execution' does not depend on any axioms
+'silent_is_no_plane' does not depend on any axioms
+'quorum_plane_two_governors' does not depend on any axioms
+'control_plane_nonvacuous' does not depend on any axioms

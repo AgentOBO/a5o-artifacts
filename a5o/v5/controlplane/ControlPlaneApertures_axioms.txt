@@ -1,0 +1,9 @@
+'Apertures.aperturesPlaneActual_is_v5_gate' does not depend on any axioms
+'Apertures.apertures_decides_every_actual_execution' does not depend on any axioms
+'Apertures.apertures_plane_accountable' does not depend on any axioms
+'Apertures.apertures_single_governor' does not depend on any axioms
+'Apertures.apertures_no_rival_governor' does not depend on any axioms
+'Apertures.apertures_within_canonical' does not depend on any axioms
+'Apertures.apertures_revocation_halts' does not depend on any axioms
+'Apertures.spec_CFunctional' does not depend on any axioms
+'Apertures.demo_plane_single_governor' does not depend on any axioms
